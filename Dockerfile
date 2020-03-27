@@ -15,7 +15,7 @@ RUN apk add --no-cache --virtual .build-deps \
         make \
         g++ \
         sqlite-dev \
-&&  gem install mailcatcher --no-ri --no-rdoc \
+&&  gem install mailcatcher --no-document \
 &&  apk del --purge .build-deps
 
 EXPOSE 25 80
