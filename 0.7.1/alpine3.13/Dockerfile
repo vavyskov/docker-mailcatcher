@@ -1,12 +1,11 @@
-FROM alpine:3.13
+ARG ALPINE_VERSION=3.13
+
+FROM alpine:${ALPINE_VERSION}
 
 ARG TZ=Europe/Prague
 
 ENV MAILCATCHER_VERSION=0.7.1
 ENV TIME_ZONE ${TZ}
-#ENV LANG="cs_CZ.UTF-8"
-#ENV LC_ALL="cs_CZ.UTF-8"
-#ENV LANGUAGE="cs_CZ.UTF-8"
 
 RUN echo "Setting the timezone..." \
 &&  apk add --no-cache --virtual .build-deps \
