@@ -1,6 +1,7 @@
 # docker-mailcatcher
 
 Supported tags and respective `Dockerfile` links:
+- [`0.7-1.0.0`](https://github.com/vavyskov/docker-mailcatcher/tree/master/0.7.1/alpine3.14)
 - [`0.7.1-alpine3.13`](https://github.com/vavyskov/docker-mailcatcher/tree/master/0.7.1/alpine3.13)
 
 Notes:
